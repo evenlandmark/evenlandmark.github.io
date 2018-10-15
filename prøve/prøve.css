@@ -1,0 +1,45 @@
+body{
+  background-color: lightblue;
+  text-align: center;
+  font: Verdana, Arial;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+img{ width: 400px;}
+ul{
+  list-style-type: none;
+  background: black;
+  margin: 0;
+  padding: 0;
+  }
+  li{
+    text-align: center;
+    display: inline-block;
+    padding: 14px 16px
+  }
+  li a:hover{
+    background-color: grey
+    }
+  li a{
+    color: white;
+    display: block;
+    text-align: center;
+  text-decoration:none;}
+img{
+  border-radius: 8px;
+  border-style: solid;
+  border-color: black;
+  border-width: 8px;}
+table{
+  margin: auto;
+  text-align: center;
+}
+td{
+  border-style: solid;
+background-color: lightgreen;
+}
+video {
+  border-style: solid;
+  border-color: black;
+  border-width: 8px;
+}

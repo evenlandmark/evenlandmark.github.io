@@ -1,0 +1,48 @@
+body{
+  font-family: Verdana, Arial;
+  background-color: cyan;
+  text-align: center;
+  font-size: 14px;
+}
+ul{
+  list-style-type: none;
+  background: green;
+  margin: 0;
+  padding: 0;
+}
+li{
+  text-align: center;
+  display: inline-block;
+}
+li a{
+  color: black;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px
+}
+li a:hover{
+  background-color: #ebe584
+}
+img{   border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+}
+p{
+  text-align: center;
+  width: 500px;
+  margin: auto;
+}
+table{
+  margin: auto;
+}
+td{
+  margin: auto;
+  border-style: solid;
+  background-color: yellow;
+}
+th{
+  color: grey;
+  border-style: solid;
+  background-color: blue
+}

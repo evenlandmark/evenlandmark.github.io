@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prosjekt 1</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		td {border-style: solid;background-color: white}
+		th {background-color: #b4aae2}
+		td {color: black}
+		th {color: black}
+		body {background-color: #00e9ff}
+		body {color: #000000}
+	</style>
+</head>
+<body>
+			<h1>Min Timeplan</h1>
+			<p><i>Velkommen til min timeplan. I timeplanen står det beskrevet hvilket fag, hvilken lærer og i hvilket klasserom undervisningen foregår.</i></p> <p> Dette er timeplanen min på Nesbru Videregående Skole, for å se nettsiden til Nesbru  <a href="http://www.nesbru.vgs.no/">klikk her.</a></p>
+			<img src="bilder/Nesbru.jpg" title="Nesbru vgs" alt="Bilde av Nesbru Videregåendeskole" >
+	<table>
+		<thead>
+				<th>Time</th><th> <a href="https://no.wikipedia.org/wiki/Mandag">Mandag</a></th></th><th>Tirsdag</th><th>Onsdag</th><th>Torsdag</th><th><a href="https://no.wikipedia.org/wiki/Fredag"><img src="bilder/Friday.jpg" title="Friday" alt="Hvitt bilde med svart tekst som sier Friday." height="50" ></a></th>
+		</thead>
+		<tbody>
+				<tr><td>1.Time</td><td>Matte med Odd Martin. 215</td><td><a href="https://no.wiktionary.org/wiki/ingenting"><img src="bilder/Nothing.jpg" title="Nothing" alt="Hvitt bilde med teksten Nothing." height="100" 	></a></td>				<td>Starter 09:20 med Matte. 215</td>	<td>Fysikk med Tine. 353</td>	<td>Gym med Lars Petter. Gymsalen</td></tr>
+
+				<tr><td>2.Time</td><td>IT med <b>Helge</b>. 343</td>			<td>Norsk med Kjetil. 220</td>	<td><a href="https://no.wikipedia.org/wiki/Matematikk">Matte med Odd. 215</a></td>				<td>Norsk med Kjetil. 220</td>	<td>Tysk med Kristin. 209</td></tr>
+
+				<tr><td>3.Time</td><td>Tysk med Kristin. 209</td><td>Kjemi med Hanne. 353</td><td>Historie med Kristine. 220</td><td><mark>IT med Helge. 343</mark></td><td>Kjemi med Hanne. 353</td></tr>
+				<tr><td>4.Time</td><td>Fri</td><td>Fysikk med tine. 355</td><td>Fri</td><td>Fri</td><td>Fri</td></tr>
+
+
+		</tbody>
+	</table>
+				<br><br>
+			<form>
+				<label>Navn:</label>
+				<input type="text" name="Navn" placeholder="Ola Nordmann" required>
+				<br><label>Yndlingsfag:</label>
+				<input type="text" name="Yndlingsfag" placeholder="Fysikk" required>
+				<br>
+				<label>Fødselsdato:</label>
+				<input type="date" name="Født">
+				<br>
+				<label>Favoritt time:</label>
+				<input type="number" name="Favoritt time:" placeholder="2">
+				<br>
+			</form>
+			<form action="register.html">
+			<select name="velg Klasse">
+				<option value="Overskrift">Velg klasse</option>
+				<option value="2STA">2STA</option>
+				<option value="2STB">2STB</option>
+				<option value="2STC">2STC</option>
+				<option value="2STD">2STD</option>
+				<option value="2STE">2STE</option>
+				<br>
+			</select>
+				<br>
+				<label>Farge på skrivebok:</label>
+				<input type="color" name="Fagre" placeholder="Farge på skrivebok">
+				<br>
+				<label>Liker du timeplanen?</label><br>
+				<input type="radio" value="Ja" name="rbSvar"<span>Ja</span>
+				<input type="radio" value="Nei" name="rbSvar"<span>Nei</span>
+				<br>
+				<label>Måloppnåelse på timeplanen:</label>
+				<input type="checkbox" value="Høy" name="rbSvar"<span>Høy</span>
+				<input type="checkbox" value="Middels" name="rbSvar"<span>Middels</span>
+				<input type="checkbox" value="Lav" name="rbSvar"<span>Lav</span>
+				<br>
+				<label>Passord til Feide</label>
+				<input type="password"  name="Passord" placeholder="passord">
+				<br>
+				<button type="submit">Ok</button>
+				<br>
+			</form>
+				<video src="Video/prosjekt.mp4" preload controls height="400" width="600" ></video>	<h2>Lydopptak</h2>	<audio src="lyder/prosjekt.mp3" controls preload autoplay loop ></audio>
+</body>
+</html>

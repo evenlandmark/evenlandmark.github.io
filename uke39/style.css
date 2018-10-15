@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+  background-color: cyan;
+  font-family: Verdana;
+}
+ul {
+  list-style-type: none;
+  background: Green;
+  margin: 0;
+  padding: 0;
+
+}
+li{
+  text-align: center;
+  display: inline-block;}
+li a{
+  color: black;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px
+
+}
+
+img {
+  border-radius: 8px;
+  border-radius: 50%;
+  border-width: 5px;
+  background-color: black;
+  border-style: solid;
+}
+li a:hover:not(.active){
+  background-color: blue;
+}
+p{ text-align: center;
+  width: 500px;
+  background-color: cyan;
+  margin: auto;
+  color: grey;}

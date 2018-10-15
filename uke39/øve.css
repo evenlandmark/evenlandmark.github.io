@@ -1,0 +1,27 @@
+h1{
+  text-align:center;
+
+  margin: auto;
+
+}
+header{
+  margin: auto;
+  text-align: center;
+}
+ul{
+  list-style-type: none;
+}
+body{
+  background-color: cyan;
+}
+
+p{
+
+  font-family: Verdana, Arial;
+  font-size: 14px;
+
+}
+main{
+  margin: auto;
+  width: 500px;
+}
