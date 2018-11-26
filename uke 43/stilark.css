@@ -1,0 +1,83 @@
+body{
+  font-family: helvetica, sans-serif;
+  background-color: darkorange;  }
+
+div{
+  background-color: white;
+  padding-left: 10px;
+  border-radius: 10px;
+
+ }
+
+div:hover > .tall{
+  background-color: lightgreen;
+}
+div:hover > .tekst{
+  background-color: lightgreen;
+}
+div:hover{
+  background-color: lightgreen;
+}
+section{
+  display:grid;
+  grid-gap: 4px;
+  /*grid-template-columns: 40px 40px 40px 40px;*/
+  /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+  grid-template-columns: repeat(18,1fr);
+  grid-auto-rows: minmax(40px,100px); }
+
+.span-1{
+  grid-column: span 1;
+}
+.span-2{
+  grid-column: span 2;
+}
+.span-3{
+  grid-column: span 3;
+}
+.span-4{
+  grid-column: span 4;
+}
+.span-5{
+  grid-column: span 5;
+}
+.span-6{
+  grid-column: span 6;
+}
+.span-7{
+  grid-column: span 7;
+}
+.span-8{
+  grid-column: span 8;
+}
+.span-9{
+  grid-column: span 9;
+}
+.span-10{ grid-column: span 10 }
+
+.span-16{ grid-column: span 16 }
+
+.usynlig  {opacity: 0; }
+
+.tall{font-size: 32px;}
+
+.tekst{font-style:oblique;
+  font-size: 20px;
+  color: red;  }
+
+    h1{
+    text-align: center;
+    font-size: 40px;   }
+
+  footer{
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    color: grey;
+    padding: 20px;  }
+    div{
+      transition: all .2s ease-in-out;    }
+
+  div:hover > .tall {transform: scale(1.5);  }
+    div:hover > .tekst{transform: scale(1.5);  }
+      div:hover{transform: scale(1.5);  }
