@@ -6,8 +6,10 @@
   grid-template-columns: 1fr 2fr 1fr;
   grid-gap: 50px;
   grid-auto-rows: minmax(100px,auto);
-  color:black;
+  color:white;
   text-align: center; }
+
+
 
 .nested{
   display: grid;
@@ -23,15 +25,18 @@ div.nested:hover{
     border: solid white;
     }
 
+
 div.en{
   border-left: solid black;
 }
 
+ /
 .nested > div{
   border: black 1px;
   padding: 0;
   color: white;
   overflow: hidden;}
+  */
 
 footer{
   display: grid;
@@ -41,11 +46,11 @@ footer{
 }
 .kamptekst{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-auto-rows: 300px;
   grid-gap: none;
   padding-bottom: none;
-  background-color: grey;
+  background-image: radial-gradient(red,black);
   border-radius: 10%}
 
 .kamptekst > div{
@@ -53,7 +58,10 @@ footer{
 
 
 div.kamptekst:hover{
-  transform: scale(1.05);}
+  transform: scale(1.05);
+  border: solid white;
+
+ }
 
 .span-1{
   grid-column: span 1;
@@ -63,12 +71,21 @@ div.kamptekst:hover{
 }
 .span-3{
   grid-column: span 3;
+  padding-top: 20px;
+}
+.span-4{
+  grid-column: span 4;
+}
+.span-5{
+  grid-column: span 5;
 }
 
 
 body{
-    background-image: linear-gradient(red, black);
+
     height: 100%;
+    background-color: red;
+
 }
 
 .grid > div{
@@ -107,38 +124,40 @@ td{
   grid-auto-rows: 200px;
   color: white;
   }
-  .kamper > div{
+.kamper > div{
     background-color:;
 
   }
-  .hovedgrid{
+.hovedgrid{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-auto-columns: 200px;
-
     color: white;
   }
-  .header{
+
+.header{
     margin-left: none;
-
     color: white;
-
   }
 
 .hjemside{
   display: grid;
-  grid-template-columns: 2fr 3fr 1fr;
-  grid-gap: 50px;
+  grid-template-columns: repeat(5,1fr);
   grid-auto-rows: minmax(100px,auto);
   color:black;
   text-align: center;
+  margin-bottom: 100px;
 
 }
+
+
+
 .grid-container{
   display: grid;
   grid-template-columns: 7fr 1fr 1fr 1fr;
   color: white;
   font-size: 30px;
+  background-color: black;
 
   }
 
@@ -147,45 +166,44 @@ td{
   posititon: relative; /* Gjør at innholdet plasseres relativt til "tekst på meny"*/
   align-self: center;
   margin: 10px;
-  background-color: ;
-  width:
-}
-
-div.dropdown:hover{
-  transform: scale(1.05);
-
+  padding: 20px;
 }
 
 .dropdown-innhold{
-  display: none; /* gjør innholdet usynlig*/
-  position: absolute; /*Gjør at innholdet plasseres rett under riktig "tekst på meny"*/
-  z-index: 1; /* Gjør at innholdet plasseres over innholdet på nettsiden*/
-   /* Bakgrunnsfarge på innholdsboksen */
-  color: black;
+  display: none;
+  position: absolute;
+  z-index: 2;
   background-color: black;
   padding: 20px;
   border-radius: 10%;
-
-
+  text-decoration-color: white;
 }
+
+
+
 .dropdown:hover .dropdown-innhold{
-  display:block; /* Gjør innholdet synlig når "tekst på meny" holdes over*/
+  display:block;
 
 }
 a{
   color: white;
-  font-size: 14px;
+  font-size: 20px;
   text-decoration: none;
 }
+
 .bilde{
   border-style: solid;
   border-radius: 25%;
   border-color: black;
   border-width: 8px;
 }
+
 .avsnitt{
+  display: grid;
   color: white;
   font-size: 20px;
+
+
 }
 .bildetekst{
   color: white;
@@ -196,4 +214,94 @@ a{
 #spillertekst{
   background-color: lightgrey;
   color: black;
+}
+h1{
+  color: white;
+  font-size: 40px;
+}
+#info{
+  color: white;
+}
+#lagbilde{
+  border: black solid 8px;
+  margin: 20px;
+
+}
+.Kontaktinformasjon{
+  color: black;
+  font-size: 16px;
+  background-color: white;
+  text-align: center;
+  border: black 8px solid;
+  margin-top:30px;
+  margin-bottom: 40px;
+
+ }
+#Kontaktinformasjon{
+  color: black;
+  font-size: 16px;
+  text-decoration: underline;
+  align-self: center;
+
+}
+.icon{
+  font-size: 40px;
+  color: white;
+}
+
+
+.butikk{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(100px,auto;);
+  text-align: center;
+  height: auto;
+  margin: 20px;
+  grid-gap: 50px;
+}
+.varer{
+  display: grid;
+  background-color: white;
+  grid-gap: 30px;
+  grid-auto-rows: minmax(100px;auto);
+  margin: 20px;
+}
+div.varer:hover{
+  transform: scale(1.05);
+  transition: 0,3;
+  border: solid 5px grey;
+
+
+}
+#butikkbilde{
+  margin: auto;
+  display: block;
+
+}
+#butikktekst{
+  grid-row: span 5;
+}
+.black{
+  background-color: black;
+}
+video{
+  width: 500px;
+  border-style: solid grey 8px;
+
+
+}
+.hovedgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 200px;
+  color: black;
+}
+.passordtekst{
+  padding-left: 300px;
+  padding-right: 300px;
+
+}
+main
+{
+  background-image: linear-gradient(black,red);
 }

@@ -1,0 +1,33 @@
+{
+  "1":{
+  "svar":"Attributt eller data som kan fastsette eller peke til annen data. "
+},
+ "2":{
+   "a":{
+     "svar":"It's Learning brukernavn"
+  },
+   "b":{
+     "svar":"Registreringsnummer"
+   },
+   "c":{
+     "svar":"Første bokstavene i plantenavnet"
+   },
+   "d":{
+     "svar":"Tlf. Nummer"
+   },
+   "e":{
+     "svar":"Posisjon"
+   },
+  "3":{
+    "svar":"En kanditatnøkkel ern en minimal supernøkkel."
+  },
+  "4":{
+    "svar":"En fremmednøkkel er   "
+  }
+
+
+
+
+
+
+}

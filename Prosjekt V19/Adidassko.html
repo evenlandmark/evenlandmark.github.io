@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCQCtP52z01YTcGbh2Ia9H8mOU96cUwbkc",
+        authDomain: "sdfghjkl-12f92.firebaseapp.com",
+        databaseURL: "https://sdfghjkl-12f92.firebaseio.com",
+        projectId: "sdfghjkl-12f92",
+        storageBucket: "sdfghjkl-12f92.appspot.com",
+        messagingSenderId: "1091848498514"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <link rel="stylesheet" href="stilark.css">
+  </head>
+  <body>
+    <header>
+    </header>
+
+    <ul>
+      <li> <a href="Index.html">Hjem</a> </li>
+      <li> <a class="aktivSide"  href="Sko.html">Boot Room</a></li>
+      <li> <a href="Drakter.html">Drakter</a> </li>
+      <li> <a href="Baller.html">Baller</a> </li>
+    </ul>
+
+    <nav class="knappeboks">
+      <button class="wtf" onclick="visSko()">ALLE</button>
+      <button class="wtf" onclick="visFargeBlå()">Blå</button>
+      <button class="wtf" onclick="visFargeSort()">Svart</button>
+      <button class="wtf" onclick="visFargeGul()">Gul</button>
+      <button class="wtf" onclick="visFargeRod()">Rød</button>
+      <button class="wtf" onclick="visPris()">Pris</button>
+    </nav>
+    <main class="skogrid">
+
+    </main>
+
+
+
+
+    <script>
+
+    const main = document.querySelector("main");
+    const db = firebase.database();
+    const fotballsko = db.ref("Varer/fotballsko/adidas");
+    const Varer = db.ref("Varer");
+
+    function visVare(snapshot){
+    let vare = snapshot.val();
+    let key = snapshot.key;
+      main.innerHTML += `
+        <article>
+          <img src="${vare.bildeUrl}">
+          <h1>${vare.Modell}</h1>
+          <p>Pris: ${vare.Pris}</p>
+
+        </article>
+      `;
+    }
+
+
+    function visSko(){
+      main.innerHTML=``
+      fotballsko.on("child_added",visVare);
+    }
+    function visPris(){
+      main.innerHTML = ``
+      fotballsko.orderByChild("Pris").on("child_added",visVare);
+
+    }
+    function visFargeBlå(){
+      main.innerHTML = ``
+      fotballsko.orderByChild("Farge1").equalTo("Blå").on("child_added", visVare);
+      fotballsko.orderByChild("Farge2").equalTo("Blå").on("child_added", visVare);
+    }
+
+    function visFargeSort(){
+      main.innerHTML = ``
+      fotballsko.orderByChild("Farge1").equalTo("Sort").on("child_added", visVare);
+      fotballsko.orderByChild("Farge2").equalTo("Sort").on("child_added", visVare);
+    }
+
+    function visFargeGul(){
+      main.innerHTML =``
+      fotballsko.orderByChild("Farge1").equalTo("Gul").on("child_added",visVare);
+      fotballsko.orderByChild("Farge2").equalTo("Gul").on("child_added",visVare);
+
+          }
+
+    function visFargeRod(){
+      main.innerHTML =``
+      fotballsko.orderByChild("Farge1").equalTo("Rød").on("child_added",visVare);
+      fotballsko.orderByChild("Farge2").equalTo("Rød").on("child_added",visVare);
+
+        }
+
+
+
+    visSko(); // Kjører når siden lastes
+
+
+
+  </script>
+
+  </body>
+</html>

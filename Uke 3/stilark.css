@@ -1,0 +1,119 @@
+nav, h1 {
+  background-color: #b8d0ce;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+nav>.klesvalg {
+  grid-column: span 2;
+}
+
+nav>.klesvalg>a {
+  padding: 12px;
+  color: blue;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: normal;
+  font-family: monospace, inherit, serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav>.klesvalg>a:hover {
+  text-decoration: underline;
+  transition: all ease-in-out 200ms;
+}
+
+nav>.denusynlig {
+  grid-column: span 1;
+}
+
+
+.navigation a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+@media (max-width:500px;) {
+header>nav{
+  flex-direction: column;
+}
+}
+header>nav{
+  align-items: center;
+}
+h1{
+}
+
+/*karan sitt*/
+
+.sos_overskrift>h2{
+  font-size: 40px;
+  text-align: center;
+  text-decoration: underline;
+font-weight: bold;
+}
+
+.Hele_main>p{
+  font-weight: bold;
+font-family: monospace;
+font-size: 16px;
+
+}
+
+.Hele_main>p>li, .Hele_main>p>ul {
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 16px;
+
+
+}
+
+.Hele_main{
+padding:0px 250px;
+border-radius: 200px;
+border-style: dotted;
+border-color: salmon;
+background-color: lightgrey;
+color: black;
+}
+
+.hele_body{
+background-color: black;
+}
+
+
+/*   even sitt */
+.passordgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+
+.passordtekst{
+  background-color;
+  font-size: 20px;
+  padding-left: ;
+  padding-right:;
+  color: black;
+
+
+}
+.span-3{
+  grid-column: span-3;
+}

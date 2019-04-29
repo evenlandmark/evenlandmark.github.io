@@ -1,0 +1,45 @@
+/* Navigasjonsbar */
+header>nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+
+}
+
+
+@media(max-width:600px){
+  header>nav{
+    flex-direction: column;
+  }
+}
+
+body{
+  background-color: hotpink;
+}
+@media(max-width:1400px) {
+  body{
+    background-color: green;
+  }
+
+}
+@media(max-width:600px) {
+  body{
+    background-color: yellow;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Navigasjonsbar slutt*/

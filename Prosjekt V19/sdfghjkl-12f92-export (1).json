@@ -1,0 +1,271 @@
+{
+  "Varer":{
+    "baller" : {
+      "ball001" : {
+        "Farge1" : "Hvit",
+        "Farge2" : "Oransje",
+        "Merke" : "Adidas",
+        "Pris" : 1400,
+        "bildeUrl" : "bilder/clball.png"
+      },
+      "ball002" : {
+        "Farge1" : "Hvit",
+        "Farge2" : "Rød",
+        "Merke" : "Adidas",
+        "Pris" : 1100,
+        "bildeUrl" : "bilder/adidassort.png"
+      },
+      "ball003" : {
+        "Farge1" : "Hvit",
+        "Farge2" : "Grønn",
+        "Merke" : "Adidas",
+        "Pris" : 1500,
+        "bildeUrl" : "bilder/grønnball.png"
+      },
+      "ball004" : {
+        "Farge1" : "Rød",
+        "Farge2" : "Hvit",
+        "Merke" : "Adidas",
+        "Pris" : 400,
+        "bildeUrl" : "bilder/adidashvitball.png"
+      },
+      "ball005" : {
+        "Farge1" : "Sort",
+        "Farge2" : "Rød",
+        "Merke" : "Nike",
+        "Pris" : 500,
+        "bildeUrl" : "bilder/sortball.png"
+      },
+      "ball006" : {
+        "Farge1" : "Gul",
+        "Farge2" : "Blå",
+        "Merke" : "Nike",
+        "Pris" : 349,
+        "bildeUrl" : "bilder/gulnike.png"
+      },
+      "ball007" : {
+        "Farge1" : "Gul",
+        "Farge2" : "Sort",
+        "Merke" : "Nike",
+        "Pris" : 799,
+        "bildeUrl" : "bilder/nikegulball.png"
+      },
+      "ball008" : {
+        "Farge1" : "Hvit",
+        "Farge2" : "Sølv",
+        "Merke" : "Nike",
+        "Pris" : 1399,
+        "bildeUrl" : "bilder/sølvball.png"
+      }
+    },
+    "drakter" : {
+      "Drakt001" : {
+        "Farge1" : "Rød",
+        "Farge2" : "Sort",
+        "Klubb" : "Manchester United",
+        "Merke " : "Adidas",
+        "Pris " : 869,
+        "Type" : "Premier League",
+        "bildeUrl" : "bilder/Manu.png"
+      },
+      "Drakt002" : {
+        "Farge1" : "Gul",
+        "Farge2" : "Sort",
+        "Klubb" : "Watford",
+        "Merke" : "Adidas",
+        "Pris" : 729,
+        "Type" : "Premier League",
+        "bildeUrl" : "bilder/Watford.png"
+      },
+      "Drakt003" : {
+        "Farge1" : "Rød",
+        "Farge2" : "Hvit",
+        "Klubb" : "Arsenal",
+        "Merke" : "Puma",
+        "Pris" : 750,
+        "Type" : "Premier League",
+        "bildeUrl" : "bilder/Gunners.png"
+      },
+      "Drakt004" : {
+        "Farge1" : "Gul",
+        "Farge2" : "Blå",
+        "Klubb" : "Chelsea",
+        "Merke" : "Nike",
+        "Pris" : 760,
+        "Type" : "Premier League",
+        "bildeUrl" : "bilder/Chelsea.png"
+      },
+      "Drakt005" : {
+        "Farge1" : "Hvit",
+        "Farge2" : "Blå",
+        "Klubb" : "Tottenham",
+        "Merke" : "Nike",
+        "Pris" : 739,
+        "Type" : "Premier League",
+        "bildeUrl" : "bilder/Spurs.png"
+      },
+      "Drakt006" : {
+        "Farge1" : "Blå",
+        "Farge2" : "Oransje",
+        "Klubb" : "Atletico Madrid",
+        "Merke " : "Nike",
+        "Pris" : 629,
+        "Type" : "La liga",
+        "bildeUrl" : "bilder/Atletico.png"
+      },
+      "Drakt007" : {
+        "Farge1" : "Blå",
+        "Farge2" : "Rød",
+        "Klubb" : "Barcelona",
+        "Merke" : "Nike",
+        "Pris" : 829,
+        "Type" : "La liga",
+        "bildeUrl" : "bilder/Barca.png"
+      },
+      "Drakt008" : {
+        "Farge1" : "Hvit",
+        "Farge2" : "Sort",
+        "Klubb" : "Juventus",
+        "Merke" : "Adidas",
+        "Pris" : 799,
+        "Type " : "Serie A",
+        "bildeUrl" : "bilder/juve.png"
+      },
+      "Drakt009" : {
+        "Farge1" : "Rød",
+        "Farge2" : "Sort",
+        "Klubb" : "AC Milan",
+        "Merke" : "Puma",
+        "Pris" : 649,
+        "Type" : "Serie A",
+        "bildeUrl" : "bilder/AcMilan.png"
+      },
+      "Drakt010" : {
+        "Farge1" : "Rød",
+        "Farge2" : "Oransje",
+        "Klubb" : "AS Roma",
+        "Merke" : "Nike",
+        "Pris" : 599,
+        "Type" : "Serie A",
+        "bildeUrl" : "bilder/Roma.png"
+      }
+    },
+    "fotballsko" : {
+      "adidas" : {
+        "adidas001" : {
+          "Farge1" : "Sort",
+          "Farge2" : "Rød",
+          "Modell" : "Adidas X",
+          "Pris" : 2300,
+          "bildeUrl" : "bilder/xsort.png"
+        },
+        "adidas002" : {
+          "Farge1" : "Blå",
+          "Farge2" : "Rød",
+          "Modell" : "Adidas X",
+          "Pris" : 2429,
+          "bildeUrl" : "bilder/xrod.png"
+        },
+        "adidas003" : {
+          "Farge1" : "Hvit",
+          "Farge2" : "Gul",
+          "Modell" : "Adidas X",
+          "Pris" : 1700,
+          "bildeUrl" : "bilder/xgul.png"
+        },
+        "adidas004" : {
+          "Farge1" : "Gull",
+          "Farge2" : "Sort",
+          "Modell " : "Predator",
+          "Pris" : 3400,
+          "bildeUrl" : "bilder/Predatorgull.png"
+        },
+        "adidas005" : {
+          "Farge1" : "Hvit",
+          "Farge2" : "Blå",
+          "Modell" : "Predator",
+          "Pris" : 2200,
+          "bildeUrl" : "bilder/predatorsolv.png"
+        },
+        "adidas006" : {
+          "Farge1" : "Rød",
+          "Farge2" : "Oransje",
+          "Modell" : "Predator",
+          "Pris" : 2100,
+          "bildeUrl" : "bilder/Predatorrod.png"
+        },
+        "adidas007" : {
+          "Farge1" : "Sort",
+          "Farge2" : "Sort",
+          "Modell" : "Nemeziz",
+          "Pris" : 2900,
+          "bildeUrl" : "bilder/nemezizsort.png"
+        },
+        "adidas008" : {
+          "Farge1" : "Gul",
+          "Farge2" : "Blå",
+          "Modell" : "Nemeziz",
+          "Pris" : 2300,
+          "bildeUrl" : "bilder/nemezizgul.png"
+        }
+      },
+      "nike" : {
+        "nike001" : {
+          "Farge1" : "Hvit",
+          "Farge2" : "",
+          "Modell" : "Superfly",
+          "Pris" : "3199",
+          "bildeUrl" : "bilder/Nikehvit.png"
+        },
+        "nike002" : {
+          "Farge1" : "Sort",
+          "Farge2" : "Gull",
+          "Modell" : "Superfly",
+          "Pris" : 2700,
+          "bildeUrl" : "bilder/Superflysort.png"
+        },
+        "nike003" : {
+          "Farge1" : "Grå",
+          "Farge2" : "Gul",
+          "Modell" : "Phantom",
+          "Pris" : 2100,
+          "bildeUrl" : "bilder/Phantomgull.png"
+        },
+        "nike004" : {
+          "Farge1" : "Blå",
+          "Farge2" : "Sort",
+          "Modell" : "Tiempo",
+          "Pris" : 1950,
+          "bildeUrl" : "bilder/TiempoBla.png"
+        },
+        "nike005" : {
+          "Farge1" : "Gul",
+          "Farge2" : "Sort",
+          "Modell" : "Tiempo",
+          "Pris" : 1800,
+          "bildeUrl" : "bilder/Tiempogul.png"
+        },
+        "nike006" : {
+          "Farge1" : "Rød",
+          "Farge2" : "Sort",
+          "Modell" : "Phantom",
+          "Pris" : 2300,
+          "bildeUrl" : "bilder/Phantomrod.png"
+        },
+        "nike007" : {
+          "Farge1" : "Sort",
+          "Farge2" : "Sort",
+          "Modell" : "Vapor",
+          "Pris" : 2000,
+          "bildeUrl" : "bilder/Vapor2sort.png"
+        },
+        "nike008" : {
+          "Farge1" : "Hvit",
+          "Farge2" : "Sort",
+          "Modell" : "Vapor",
+          "Pris" : 2200,
+          "bildeUrl" : "bilder/Vaporsort.png"
+        }
+      }
+    }
+  }

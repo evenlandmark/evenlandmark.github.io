@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCQCtP52z01YTcGbh2Ia9H8mOU96cUwbkc",
+      authDomain: "sdfghjkl-12f92.firebaseapp.com",
+      databaseURL: "https://sdfghjkl-12f92.firebaseio.com",
+      projectId: "sdfghjkl-12f92",
+      storageBucket: "sdfghjkl-12f92.appspot.com",
+      messagingSenderId: "1091848498514"
+    };
+    firebase.initializeApp(config);
+</script>
+    <link rel="stylesheet" href="stilark.css">
+  </head>
+  <body>
+    <header>
+
+    </header>
+    <main>
+      <ul>
+        <li> <a class="aktivSide" href="Index.html">Hjem</a> </li>
+        <li> <a href="Sko.html">Boot Room</a></li>
+        <li> <a href="Drakter.html">Drakter</a> </li>
+        <li> <a href="Baller.html">Baller</a> </li>
+      </ul>
+
+
+
+
+
+        <section class="hovedgridHjemside">
+            <div class="gridfarge">
+
+
+            </div>
+
+            <div class="slideshowgrid slide-container">
+              <span id="slider-image-1"></span>
+              <span id="slider-image-2"></span>
+              <span id="slider-image-3"></span>
+              <div class="image-container">
+              <a href="Adidassko.html"><img src="bilder/adidasgutta.png" class="slider-image" alt=""></a>
+              <a href="Nikesko.html"><img src="bilder/Euphoria.png" class="slider-image" alt=""></a>
+              <a href="Drakter.html"><img src="bilder/watfordposter.png" class="slider-image" alt=""></a>
+              </div>
+              <div class="button-container">
+                <a href="#slider-image-1" class="slider-button"></a>
+                <a href="#slider-image-2" class="slider-button"></a>
+                <a href="#slider-image-3" class="slider-button"></a>
+
+
+
+
+
+              </div>
+
+
+            </div>
+
+            <div class="gridfarge">
+              2
+            </div>
+
+            <div class="gridfarge">
+              <video src="Nikereklame.mp4"  preload="auto" controls poster="bilder/videoposter.png">
+
+              </video>
+            </div>
+
+            <a href="Drakter.html">
+            <div class="">
+              <img src="bilder/burnleydrakt.png" alt="">
+
+
+
+            </div>
+            </a>
+
+            <div class="">
+              <img src="bilder/fotballer.png" alt="">
+
+
+            </div>
+
+
+        </section>
+
+        <section class="nyheter">
+          <div class=" span-3">
+            <h1>Nyheter</h1>
+          </div>
+
+          <div class="gridfarge">
+            Hei
+
+          </div>
+          <div class="gridfarge">
+            Hei
+
+          </div>
+          <div class="gridfarge">
+            Hei
+
+          </div>
+
+        </section>
+
+<script type="text/javascript">
+  // Referanser til HTML-elementer
+  const secAllefotballsko = document.querySelector("#secfotballsko");
+  // Referanser til firebase-databasen
+  const db = firebase.database();
+  const varer = db.ref("varer");
+  visAllefotballsko(); // Kjører funksjonen visAllePokemon i det nettsiden starter, funksjonen er definert under
+  // Funksjonsdefinisjoner for spørringer.
+  // Funksjoner kjøres bare når de kalles, slik som visAllePokemon(); på linje 57
+  function visAllefotballsko(){
+    // En funksjon som kjører en spørring for å vise alle pokemon
+    secAllefotballsko.innerHTML = ``; // Sletter innholdet i html-elementet secAllePokemon
+    fotballsko.on("child_added",genererHTML); // Spørrefunksjon som henter alle pokemon fra databasen, og kjører funksjonen genererHTML på hver pokemon.
+  }
+  function vis5dyrstefotballsko(){
+    // En funksjon som kjører en spørring for å vise de 20 sterkeste pokemon(max CP)
+    secAllefotballsko.innerHTML = ``;
+    fotballsko.orderByChild("Pris").limitToLast(5).on("child_added",genererHTML);
+  }
+  function vis20SvakestePokemon(){
+    // En funksjon som kjører en spørring for å vise de 20 svakeste pokemon(max CP)
+    secAllePokemon.innerHTML = ``;
+    pokemon.orderByChild("Max CP").limitToFirst(20).on("child_added",genererHTML);
+  }
+
+  function genererHTML(snapshot){
+    // Javascript-funksjon for å generere HTML for hver Pokemon
+    // Denne får dere på prøven
+    let key = snapshot.key;
+    let poke = snapshot.val();
+    secAllefotballsko.innerHTML += `
+      <section class="fotballsko">
+        <h3>${key}:${poke["Pris"]}</h3>
+        <img src=${poke["Image URL"]}>
+        <p>Pris: ${poke["Modell"]}</p>
+        <p>Farge1: ${poke["Farge1"]}</p>
+        <p>Farge2: ${poke["Farge2"]}</p>
+      </section>
+
+
+
+
+
+
+
+    </main>
+
+  </body>
+</html>

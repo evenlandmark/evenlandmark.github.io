@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCQCtP52z01YTcGbh2Ia9H8mOU96cUwbkc",
+        authDomain: "sdfghjkl-12f92.firebaseapp.com",
+        databaseURL: "https://sdfghjkl-12f92.firebaseio.com",
+        projectId: "sdfghjkl-12f92",
+        storageBucket: "sdfghjkl-12f92.appspot.com",
+        messagingSenderId: "1091848498514"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <link rel="stylesheet" href="Stilark.css">
+  </head>
+  <body>
+    <header>
+    <ul>
+      <li> <a href="Index.html">Hjem</a> </li>
+      <li> <a href="Sko.html">Boot Room</a></li>
+      <li> <a href="Drakter.html">Drakter</a> </li>
+      <li> <a class="aktivSide" href"Baller.html">Baller</a> </li>
+    </ul>
+    <nav class="knappeboks">
+      <button class="wtf" onclick="visBaller()">Alle</button>
+      <button class="wtf" onclick="visNike()">Nike</button>
+      <button class="wtf" onclick="visAdidas()">Adidas</button>
+      <button class="wtf" onclick="visPris()">Pris</button>
+    </nav>
+  </header>
+  <main class="skogrid">
+    <div class="span-4">
+      <h4>Fotballer</h4>
+    </div>
+  </main>
+
+
+  <script>
+
+  const main = document.querySelector("main");
+  const db = firebase.database();
+  const baller = db.ref("Varer/baller")
+  const Varer = db.ref("Varer");
+
+  function visVare(snapshot){
+    let vare = snapshot.val();
+    let key = snapshot.key;
+    console.log(snapshot.val())
+      main.innerHTML +=`
+
+      <article>
+      <img src="${vare.bildeUrl}">
+      <h1>${vare.Merke}<h1>
+      <p><h4>Pris:</h4>${vare.Pris}</p>
+      </article>
+  `;
+}
+
+  function visBaller(){
+    main.innerHTML=``
+    baller.orderByChild("Merke").on("child_added",visVare);
+  }
+
+  function visNike(){
+    main.innerHTML=``
+    baller.orderByChild("Merke").equalTo("Nike").on("child_added",visVare);
+  }
+
+  function visAdidas(){
+    main.innerHTML=``
+    baller.orderByChild("Merke").equalTo("Adidas").on("child_added",visVare);
+  }
+
+  function visPris(){
+    main.innerHTML = ``
+    baller.orderByChild("Pris").on("child_added",visVare);
+
+  }
+
+  visBaller();  // kjører når siden lastes
+
+
+  </script>
+
+
+  </body>
+</html>
