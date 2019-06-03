@@ -19,12 +19,10 @@
       };
       firebase.initializeApp(config);
     </script>
-
   </head>
   <body>
     <header>
       <img src="bilder/Logo1.png" id="ApexLogo" alt="">
-
       <ul>
         <li> <a href="Index.html">Hjem</a> </li>
         <li> <a href="Sko.html">Boot Room</a></li>
@@ -34,7 +32,6 @@
     </header>
     <main>
       <div id="secValgtVare">
-
       </div>
     </main>
     <footer>
@@ -59,20 +56,21 @@
     </footer>
 
     <script>
+    const main = document.querySelector("main");
+    const secValgtVare = document.querySelector("#secValgtVare");
 
-    const main = document.querySelector("main"); // variabel som referer til mainelementet
-    const secValgtVare = document.querySelector("#secValgtVare"); // variabel som referer til mainelementet
+    //koden som henter key-verdien fra hovedsiden//
 
-    // koden som henter key-verdien fra forrige side//
     var url_string = window.location.href;
     var url = new URL(url_string);
     var id = url.searchParams.get("id");
     var parent = url.searchParams.get("parent");
-    var parentParent = url.searchParams.get("parentParent");
 
-    // referanser til databasen //
+
+    //referanser til databasen//
+
     const db = firebase.database();
-    const valgtVare = db.ref("Varer/"+parentParent+"/"+ parent +"/" + id );
+    const valgtVare = db.ref("Varer/"+ parent +"/" + id );
     console.log("id: " + id );
 
 
@@ -81,8 +79,8 @@
     function visValgtVare(snapshot){
       let vare = snapshot.val();
       let key = snapshot.key;
-
       console.log(vare);
+
 
 
 
@@ -92,20 +90,21 @@
       <article>
       <img class="undersideBilde" src="${vare.bildeUrl2}">
       </article>
-      <article class="">
-      <h1 id="overskrift">${vare.Modell}</h1>
-      <p> <b>Pris:</b>${vare.Pris}</p>
-      <p> <b>Farger:</b> ${vare.Farge1} og ${vare.Farge2}</p>
-      <p class="beskrivelseTekst"> ${vare.Info} </P>
-        <button type="button" class="handlekurvKnapp">Legg til i handlevogn</button>
+      <article class="bakgrunnsfargeInfo">
+      <h1 id="overskrift">${vare.Merke}</h1>
+      <p> <b>Pris:</b> ${vare.Pris}</p>
+      <p><b>Farger:</b> ${vare.Farge1} og ${vare.Farge2} </p>
+      <p class="beskrivelseTekst" >${vare.Info}</p>
+
+      <button type="button" class="handlekurvKnapp">Legg til i handlevogn</button>
       </article>
       </section>
+
+
     `;
     }
+
     </script>
-
-
-
 
   </body>
 </html>

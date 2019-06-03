@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title></title>
     <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
       // Initialize Firebase
       var config = {
@@ -20,6 +22,7 @@
   </head>
   <body>
     <header>
+      <img src="bilder/Logo1.png" id="ApexLogo" alt="">
     <ul>
       <li> <a href="Index.html">Hjem</a> </li>
       <li> <a href="Sko.html">Boot Room</a></li>
@@ -38,6 +41,26 @@
       <h4>Fotballer</h4>
     </div>
   </main>
+  <footer>
+    <div class="Kontaktinformasjon">
+      <div class="">
+        <i class="fas fa-shipping-fast" style="font-size:48px; margin-top:10px;"></i>
+        <h4>Rask Levering</h4>
+        <p>1-3 virkningsdager</p>
+      </div>
+
+      <div class="">
+        <i class="fa fa-credit-card" style="font-size:48px; margin-top:10px;"></i>
+        <h4>Sikker Betaling</h4>
+        <p>Kort eller Vipps</p>
+      </div>
+      <div class="">
+        <i class="fa fa-dropbox" class="fa fa-dropbox" style="font-size:48px; margin-top:10px;"></i>
+        <h4>Gratis Levering</h4>
+        <p>Gjelder kun bestillinger over 1400kr</p>
+      </div>
+    </div>
+  </footer>
 
 
   <script>
@@ -50,14 +73,18 @@
   function visVare(snapshot){
     let vare = snapshot.val();
     let key = snapshot.key;
+    let parent =snapshot.ref.parent.key;
+    let ref = parent + "/" + key;
     console.log(snapshot.val())
       main.innerHTML +=`
 
+    <a href="underside3.html?id=${key}&parent=${parent}">
       <article>
       <img src="${vare.bildeUrl}">
       <h1>${vare.Merke}<h1>
       <p><h4>Pris:</h4>${vare.Pris}</p>
       </article>
+    </a>
   `;
 }
 

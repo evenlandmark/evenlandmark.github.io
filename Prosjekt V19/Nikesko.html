@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title></title>
     <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
       // Initialize Firebase
       var config = {
@@ -19,7 +21,7 @@
     <link rel="stylesheet" href="stilark.css">
   </head>
   <body>
-
+    <img src="bilder/Logo1.png" id="ApexLogo" alt="">
       <ul>
         <li> <a href="Index.html">Hjem</a> </li>
         <li> <a href="Sko.html">Boot Room</a></li>
@@ -28,18 +30,22 @@
       </ul>
 
       <header>
-        <img src="" alt="">
+        <div class="KategoriHeader">
+          <h1>Nike Fotballsko</h1>
+          <p>Her finner du vårt utvalg av fotballsko fra alle linjene til Nike. Vi kan tilby Mercurial, Phantom og Tiempo.</p>
+        </div>
+
         <nav class="knappeboks">
           <button class="wtf" onclick="visSko()">ALLE</button>
           <button class="wtf" onclick="visFargeBlå()">Blå</button>
           <button class="wtf" onclick="visFargeSort()">Svart</button>
-          <button class="wtf" onclick="visFargeGul()">Gul</button>
+          <button class="wtf" onclick="visFargeHvit()">Hvit</button>
           <button class="wtf" onclick="visFargeRod()">Rød</button>
           <button class="wtf" onclick="visPris()">Pris</button>
         </nav>
 
 
-      </header>
+
       <main class="skogrid">
         <div class="span-4">
 
@@ -48,9 +54,28 @@
 
 
     </main>
-    <section >
+    <footer>
+      <div class="Kontaktinformasjon">
+        <div class="">
+          <i class="fas fa-shipping-fast" style="font-size:48px; margin-top:10px;"></i>
+          <h4>Rask Levering</h4>
+          <p>1-3 virkningsdager</p>
+        </div>
 
-    </section>
+        <div class="">
+          <i class="fa fa-credit-card" style="font-size:48px; margin-top:10px;"></i>
+          <h4>Sikker Betaling</h4>
+          <p>Kort eller Vipps</p>
+        </div>
+        <div class="">
+          <i class="fa fa-dropbox" class="fa fa-dropbox" style="font-size:48px; margin-top:10px;"></i>
+          <h4>Gratis Levering</h4>
+          <p>Gjelder kun bestillinger over 1400kr</p>
+        </div>
+      </div>
+    </footer>
+
+
     <script>
 
 
@@ -63,46 +88,50 @@
     let vare = snapshot.val();
     let key = snapshot.key;
     let parent = snapshot.ref.parent.key;
+    let parentParent = snapshot.ref.parent.parent.key;
     let ref = parent + "/" + key;
     console.log(snapshot.val())
       main.innerHTML += `
 
+      <a href="underside.html?id=${key}&parent=${parent}&parentParent=${parentParent}">
         <article>
+          <div>
           <img src="${vare.bildeUrl}">
-          <h1>${vare.Modell}</h1>
+          </div>
+          <div>
+          <h1>${vare.Navn}</h1>
           <p><h4>Pris:</h4>${vare.Pris}</p>
-          <a href="underside.html?id${key}">Detaljer</a>
-
-
+          </div>
         </article>
+      </a>
       `;
     }
 
     function visFargeBlå(){
       main.innerHTML = ``
+
       fotballsko.orderByChild("Farge1").equalTo("Blå").on("child_added", visVare);
       fotballsko.orderByChild("Farge2").equalTo("Blå").on("child_added", visVare);
-    }
+  }
 
-    function visFargeSort(){
-      main.innerHTML = ``
-      fotballsko.orderByChild("Farge1").equalTo("Sort").on("child_added", visVare);
-      fotballsko.orderByChild("Farge2").equalTo("Sort").on("child_added", visVare);
-    }
+function visFargeSort(){
+  main.innerHTML = ``
+  fotballsko.orderByChild("Farge1").equalTo("Sort").on("child_added", visVare);
+  fotballsko.orderByChild("Farge2").equalTo("Sort").on("child_added", visVare);
+}
 
-    function visFargeGul(){
-      main.innerHTML =``
-      fotballsko.orderByChild("Farge1").equalTo("Gul").on("child_added",visVare);
-      fotballsko.orderByChild("Farge2").equalTo("Gul").on("child_added",visVare);
+  function visFargeHvit(){
+    main.innerHTML =``
+    fotballsko.orderByChild("Farge1").equalTo("Hvit").on("child_added",visVare);
+    fotballsko.orderByChild("Farge2").equalTo("Hvit").on("child_added",visVare);
 
           }
 
-      function visFargeRod(){
-        main.innerHTML =``
-        fotballsko.orderByChild("Farge1").equalTo("Rød").on("child_added",visVare);
-        fotballsko.orderByChild("Farge2").equalTo("Rød").on("child_added",visVare);
-
-        }
+    function visFargeRod(){
+    main.innerHTML =``
+    fotballsko.orderByChild("Farge1").equalTo("Rød").on("child_added",visVare);
+    fotballsko.orderByChild("Farge2").equalTo("Rød").on("child_added",visVare);
+}
 
 
     function visSko(){
@@ -117,6 +146,7 @@
       fotballsko.orderByChild("Pris").on("child_added",visVare)
 
     }
+
 
 
 
