@@ -1,0 +1,33 @@
+body{
+  background-image: url("haramve.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media(max-width:1400px){
+  body{
+    background-image: url("DO.png");
+    background-repeat: no-repeat;
+    background-color: yellow;
+
+
+  }
+}
+
+
+@media(max-width:1000px){
+  body{
+    background-image: url("bigchungus.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+}
+@media(max-width:800px){
+  body{
+    background-color: red;
+  }
+}
+@media(max-width:600px){
+  body{
+    background-color: blue;
+  }

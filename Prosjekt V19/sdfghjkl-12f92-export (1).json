@@ -1,0 +1,356 @@
+{
+  "Varer" : {
+    "baller" : {
+      "ball001" : {
+        "Farge1" : "Hvit",
+        "Farge2" : "Oransje",
+        "Info" : "adidas Finale 19 er den offisielle sluttspillsballen til UEFA Champions League 2018/2019. Matchballen har en termisk bundet og sømløs overflate som gir god kontakt og redusert vannopptak.",
+        "Merke" : "Adidas",
+        "Pris" : 1449,
+        "bildeUrl" : "bilder/clball.png",
+        "bildeUrl2" : "https://www.torshovsport.no/media/catalog/product/cache/1/image/500x/9df78eab33525d08d6e5fb8d27136e95/a/d/adidas_champions_league_18_19_offisiell_matchball_finale_madrid_fotball_dn8685_1_1.jpg"
+      },
+      "ball002" : {
+        "Farge1" : "Hvit",
+        "Farge2" : "Rød",
+        "Info" : "adidas Finale Capitano er en fotball med samme utseende som matchballen i UEFA Champions League. Ballen er av høy kvalitet og holdbarhet.",
+        "Merke" : "Adidas",
+        "Pris" : 219,
+        "bildeUrl" : "bilder/adidassort.png",
+        "bildeUrl2" : "https://www.torshovsport.no/media/catalog/product/cache/1/image/500x/9df78eab33525d08d6e5fb8d27136e95/a/d/adidas_finale_capitano_fotball_dn8674_.jpg"
+      },
+      "ball003" : {
+        "Farge1" : "Hvit",
+        "Farge2" : "Grønn",
+        "Info" : "100% polyuretan-overflate som øker ballens holdbarhet og fleksibilitet",
+        "Merke" : "Adidas",
+        "Pris" : 1500,
+        "bildeUrl" : "bilder/grønnball.png",
+        "bildeUrl2" : "https://thumblr.uniid.it/product/179503/29d5270ba257.jpg"
+      },
+      "ball004" : {
+        "Farge1" : "Rød",
+        "Farge2" : "Hvit",
+        "Info" : "Dette er den offisielle MLS-kampballen, som blir brukt av spillere som Zlatan Ibrahimović, Josef Martinez og Sebastian Giovinco",
+        "Merke" : "Adidas",
+        "Pris" : 1499,
+        "bildeUrl" : "bilder/adidashvitball.png",
+        "bildeUrl2" : "https://thumblr.uniid.it/product/179513/617fae94cecc.jpg"
+      },
+      "ball005" : {
+        "Farge1" : "Sort",
+        "Farge2" : "Rød",
+        "Info" : "Nike introduserer Game Over Pack, som med sitt skarpe og listige utseende beskriver hvordan du blir den avgjørende spilleren for laget ditt, en skikkelig Game Killer. ",
+        "Merke" : "Nike",
+        "Pris" : 99,
+        "bildeUrl" : "bilder/sortball.png",
+        "bildeUrl2" : "https://thumblr.uniid.it/product/181425/7782b28abd4a.jpg"
+      },
+      "ball006" : {
+        "Farge1" : "Hvit",
+        "Farge2" : "Oransje",
+        "Info" : "Strike-fotballen er laget med en forsterket gummiblære, som sørger for at ballen holder på luften, samtidig med at ballen holder på formen.",
+        "Merke" : "Nike",
+        "Pris" : 269,
+        "bildeUrl" : "bilder/gulnike.png",
+        "bildeUrl2" : "https://thumblr.uniid.it/product/184605/d5a3435d92cc.jpg"
+      },
+      "ball007" : {
+        "Farge1" : "Sort",
+        "Farge2" : "Gul",
+        "Info" : "Ballen er laget med en maskinsydd konstruksjon som gir god holdbarhet og et mykt touch på ballen. Utover det er Strike-ballen laget med et visuelt grafisk design, som gjør det lettere å lokalisere ballen i luften slik at du i neste omgang hurtigere kan reagere og gjøre ditt neste trekk.",
+        "Merke" : "Nike",
+        "Pris" : 149,
+        "bildeUrl" : "bilder/nikegulball.png",
+        "bildeUrl2" : "https://thumblr.uniid.it/product/181441/f81c8bfd9caf.jpg"
+      },
+      "ball008" : {
+        "Farge1" : "Hvit",
+        "Farge2" : "Sort",
+        "Info" : "Nike Merlin Matchball er en fotball med 4-panels konstruksjon. Overflaten har Aerowtrac-spor som gir ballen en god bane i lufta. ACC-teknologi gir deg god kontroll på ballen under alle værforhold.",
+        "Merke" : "Nike",
+        "Pris" : 1399,
+        "bildeUrl" : "bilder/sølvball.png",
+        "bildeUrl2" : "https://www.torshovsport.no/media/catalog/product/cache/1/image/500x/9df78eab33525d08d6e5fb8d27136e95/n/i/nike_merlin_matchball_fotball_sc3303-100.jpg"
+      }
+    },
+    "drakter" : {
+      "Drakt001" : {
+        "Farge1" : "Rød",
+        "Farge2" : "Sort",
+        "Info" : "Manchester Uniteds hjemmedrakt med korte ermer for sesongen 2018/19 fra adidas. Authentic-drakten er laget med adidas climachill som er et materiale spesielt konstruert for å lede svette vekk fra kroppen, slik at du alltid holder deg tørr og komfortabel. Det fungerer ved at svette og fukt fordeles jevnt utover materialet og dermed forbedrer kroppens naturlige avkjølingssystem.",
+        "Klubb" : "Manchester United",
+        "Merke " : "Adidas",
+        "Pris" : 869,
+        "Type" : "Premier League",
+        "bildeUrl" : "bilder/Manu.png",
+        "bildeUrl2" : "https://thumblr.uniid.it/product/182321/c6deba0a8fcd.jpg"
+      },
+      "Drakt002" : {
+        "Farge1" : "Grønn",
+        "Farge2" : "Gul",
+        "Info" : "Watfords bortedrakt med korte ermer for sesongen 2018/19 fra adidas. Authentic-drakten er laget med adidas climachill som er et materiale spesielt konstruert for å lede svette vekk fra kroppen, slik at du alltid holder deg tørr og komfortabel. Det fungerer ved at svette og fukt fordeles jevnt utover materialet og dermed forbedrer kroppens naturlige avkjølingssystem.",
+        "Klubb" : "Watford",
+        "Merke" : "Adidas",
+        "Pris" : 729,
+        "Type" : "Premier League",
+        "bildeUrl" : "bilder/Watford.png",
+        "bildeUrl2" : "https://www.thehornetsshop.co.uk/siteimg/prodhires/2136-304.jpg"
+      },
+      "Drakt003" : {
+        "Farge1" : "Rød",
+        "Farge2" : "Hvit",
+        "Info" : "Arsenal har vært en del av engelsk og internasjonal toppfotball i mange år. Faktisk har de kun rykket ned fra den øverste divisjonen én gang og det var så langt tilbake som i 1913. Det gjør at Arsenal er klubben med flest sesonger på rad i den øverste divisjonen i England. \"The Gunners\" er nok mest kjent for sesongen 2003/04, da Arséne Wenger og hans spillere lykkes å vinne ligatittelen uten å tape en eneste kamp.",
+        "Klubb" : "Arsenal",
+        "Merke" : "Puma",
+        "Pris" : 750,
+        "Type" : "Premier League",
+        "bildeUrl" : "bilder/Gunners.png",
+        "bildeUrl2" : "https://thumblr.uniid.it/product/177582/dda33b23af90.jpg"
+      },
+      "Drakt004" : {
+        "Farge1" : "Gul",
+        "Farge2" : "Blå",
+        "Info" : "Chelsea Vaporknit Match Fotballdrakt 18/19 Borte er Nikes mest tekniske og komfortable fotballdrakt. Fotballdrakten er produsert i et svært elastisk materiale som følger dine naturlige bevegelser, og har strategisk plasserte mesh-paneler for pustende komfort. Fotballdrakten er identisk med den Chelsea-spillerne benytter i kamper.",
+        "Klubb" : "Chelsea",
+        "Merke" : "Nike",
+        "Pris" : 760,
+        "Type" : "Premier League",
+        "bildeUrl" : "bilder/Chelsea.png",
+        "bildeUrl2" : "https://thumblr.uniid.it/product/176400/81480ecd8487.jpg"
+      },
+      "Drakt005" : {
+        "Farge1" : "Hvit",
+        "Farge2" : "Blå",
+        "Info" : "Tottenhams hjemmedrakt for sesongen 2018/19 fra Nike. Dri-FIT-materialet tar vekk svetten fra kroppen, og hjelper til å holde deg tørr og komfortabel",
+        "Klubb" : "Tottenham",
+        "Merke" : "Nike",
+        "Pris" : 739,
+        "Type" : "Premier League",
+        "bildeUrl" : "bilder/Spurs.png",
+        "bildeUrl2" : "https://thumblr.uniid.it/product/177685/faf7cf4a08c3.jpg"
+      },
+      "Drakt006" : {
+        "Farge1" : "Blå",
+        "Farge2" : "Oransje",
+        "Info" : "Atletico Madrids tredjedrakt for sesongen 2018/19 fra Nike.",
+        "Klubb" : "Atletico Madrid",
+        "Merke " : "Nike",
+        "Pris" : 629,
+        "Type" : "La liga",
+        "bildeUrl" : "bilder/Atletico.png",
+        "bildeUrl2" : "https://thumblr.uniid.it/product/176645/a24c091ff091.jpg"
+      },
+      "Drakt007" : {
+        "Farge1" : "Blå",
+        "Farge2" : "Rød",
+        "Info" : "Barcelonas hjemmedrakt for sesongen 2018/19 fra Nike. Drakten er laget i Nikes Dri-FIT materiale ",
+        "Klubb" : "Barcelona",
+        "Merke" : "Nike",
+        "Pris" : 829,
+        "Type" : "La liga",
+        "bildeUrl" : "bilder/Barca.png",
+        "bildeUrl2" : "https://thumblr.uniid.it/product/177601/f2ea053f2d17.jpg"
+      },
+      "Drakt008" : {
+        "Farge1" : "Hvit",
+        "Farge2" : "Sort",
+        "Info" : "Juventus sin hjemmedrakt for sesongen 2018/19 fra Adidas. Authentic-drakten er laget med adidas climachil som er et materiale spesielt konstruert for å lede svette vekk fra kroppen, slik at du alltid holder deg tørr og komfortabel.",
+        "Klubb" : "Juventus",
+        "Merke" : "Adidas",
+        "Pris" : 799,
+        "Type " : "Serie A",
+        "bildeUrl" : "bilder/juve.png",
+        "bildeUrl2" : "https://thumblr.uniid.it/product/177258/ab01ee9d0545.jpg"
+      },
+      "Drakt009" : {
+        "Farge1" : "Rød",
+        "Farge2" : "Sort",
+        "Info" : "AC Milans hjemmedrakt for sesongen 2018/19 fra Puma. Dette er en authentic drakt som er laget i samme kvalitet som spillerne selv bruker under kamp.",
+        "Klubb" : "AC Milan",
+        "Merke" : "Puma",
+        "Pris" : 649,
+        "Type" : "Serie A",
+        "bildeUrl" : "bilder/AcMilan.png",
+        "bildeUrl2" : "https://thumblr.uniid.it/product/175181/a15cf64d39cc.jpg"
+      },
+      "Drakt010" : {
+        "Farge1" : "Rød",
+        "Farge2" : "Oransje",
+        "Info" : "AS Romas hjemmedrakt for sesongen 2018/19 fra Nike.  Drakten er laget av Nikes Dri-FIT materiale. Dri-FIT er et pustende, hurtigtørkende materiale som leder svette og fukt vekk fra kroppen.",
+        "Klubb" : "AS Roma",
+        "Merke" : "Nike",
+        "Pris" : 599,
+        "Type" : "Serie A",
+        "bildeUrl" : "bilder/Roma.png",
+        "bildeUrl2" : "https://thumblr.uniid.it/product/172287/8cb83d6cb6ca.jpg"
+      }
+    },
+    "fotballsko" : {
+      "adidas" : {
+        "adidas001" : {
+          "Farge1" : "Sort",
+          "Farge2" : "Rød",
+          "Info" : "X 18.1 FG/AG er en toppmodell fra adidas' X-linje. Overdel i syntetisk SPEEDMESH-materiale som former seg perfekt etter foten din fra første stund. FG/AG-hybridsåle for spill på gress og nyere kunstgressbaner.",
+          "Modell" : "Adidas X 18.1 FG/AG",
+          "Navn" : "Adidas X",
+          "Pris" : 2300,
+          "bildeUrl" : "bilder/xsort.png",
+          "bildeUrl2" : "https://thumblr.uniid.it/product/179248/c4ac5e3425aa.jpg"
+        },
+        "adidas002" : {
+          "Farge1" : "Blå",
+          "Farge2" : "Rød",
+          "Info" : "X 18.1 FG/AG er en toppmodell fra adidas' X-linje. Overdel i syntetisk SPEEDMESH-materiale som former seg perfekt etter foten din fra første stund. FG/AG-hybridsåle for spill på gress og nyere kunstgressbaner.",
+          "Modell" : "Adidas X 18.1 FG/AG",
+          "Navn" : "Adidas X",
+          "Pris" : 2429,
+          "bildeUrl" : "bilder/xrod.png",
+          "bildeUrl2" : "https://thumblr.uniid.it/product/179250/cca413a8347e.jpg"
+        },
+        "adidas003" : {
+          "Farge1" : "Hvit",
+          "Farge2" : "Gul",
+          "Info" : "X 18.1 FG/AG er en toppmodell fra adidas' X-linje. Overdel i syntetisk SPEEDMESH-materiale som former seg perfekt etter foten din fra første stund. FG/AG-hybridsåle for spill på gress og nyere kunstgressbaner.",
+          "Modell" : "Adidas X 18.1 FG/AG",
+          "Navn" : "Adidas X",
+          "Pris" : 1700,
+          "bildeUrl" : "bilder/xgul.png",
+          "bildeUrl2" : "https://thumblr.uniid.it/product/179869/050e920f6fe9.jpg"
+        },
+        "adidas004" : {
+          "Farge1" : "Gull",
+          "Farge2" : "Sort",
+          "Info" : "Predator 19+ er toppmodellen fra Predator-linjen til adidas. Overdel i supermykt og smidig Primeknit-materiale med riller for bedre ballkontroll. FG/AG-knotter for spill på naturgress og nyere kunstgressbaner.",
+          "Modell" : "Predator 19+ ",
+          "Navn" : "Adidas Predator",
+          "Pris" : 3400,
+          "bildeUrl" : "bilder/Predatorgull.png",
+          "bildeUrl2" : "https://thumblr.uniid.it/product/179867/e464fe3e77e7.jpg"
+        },
+        "adidas005" : {
+          "Farge1" : "Hvit",
+          "Farge2" : "Blå",
+          "Info" : "Predator 19+ er toppmodellen fra Predator-linjen til adidas. Overdel i supermykt og smidig Primeknit-materiale med riller for bedre ballkontroll. FG/AG-knotter for spill på naturgress og nyere kunstgressbaner.",
+          "Modell" : "Predator 19+",
+          "Navn" : "Adidas Predator",
+          "Pris" : 2200,
+          "bildeUrl" : "bilder/predatorsolv.png",
+          "bildeUrl2" : "https://thumblr.uniid.it/product/179310/fbefc854d17d.jpg"
+        },
+        "adidas006" : {
+          "Farge1" : "Rød",
+          "Farge2" : "Oransje",
+          "Info" : "Predator 19+ er toppmodellen fra Predator-linjen til adidas. Overdel i supermykt og smidig Primeknit-materiale med riller for bedre ballkontroll. FG/AG-knotter for spill på naturgress og nyere kunstgressbaner.",
+          "Modell" : "Predator 19+",
+          "Navn" : "Adidas Predator",
+          "Pris" : 2100,
+          "bildeUrl" : "bilder/Predatorrod.png",
+          "bildeUrl2" : "https://thumblr.uniid.it/product/179350/6ba1e4da31da.jpg"
+        },
+        "adidas007" : {
+          "Farge1" : "Sort",
+          "Farge2" : "Sort",
+          "Info" : "Nemeziz 18.1 er en toppmodell fra adidas' Nemeziz-linje. Overdel i mykt og fleksibelt Agility Knit 2.0-materiale som gir perfekt passform fra første stund. FG/AG-yttersåle for spill på naturgress og nyere kunstgressbaner.",
+          "Modell" : "Nemeziz 18.1 FG/AG",
+          "Navn" : "Adidas Nemeziz",
+          "Pris" : 2900,
+          "bildeUrl" : "bilder/nemezizsort.png",
+          "bildeUrl2" : "https://thumblr.uniid.it/product/179404/0d62b2bafa98.jpg"
+        },
+        "adidas008" : {
+          "Farge1" : "Gul",
+          "Farge2" : "Blå",
+          "Info" : "Nemeziz 18.1 er en toppmodell fra adidas' Nemeziz-linje. Overdel i mykt og fleksibelt Agility Knit 2.0-materiale som gir perfekt passform fra første stund. FG/AG-yttersåle for spill på naturgress og nyere kunstgressbaner.",
+          "Modell" : "Nemeziz 18.1 FG/AG",
+          "Navn" : "Adidas Nemeziz",
+          "Pris" : 2300,
+          "bildeUrl" : "bilder/nemezizgul.png",
+          "bildeUrl2" : "https://thumblr.uniid.it/product/179288/d980b6177222.jpg"
+        }
+      },
+      "nike" : {
+        "nike001" : {
+          "Farge1" : "Hvit",
+          "Farge2" : "",
+          "Info" : "Mercurial Superfly VI Elite AG-Pro er toppmodellen fra Nikes speedsilo Mercurial. Overdel i Nikes Flyknit 360-konstruksjon som gir en tett og fleksibel passform. AG-Pro-knotter for spill på nyere kunstgressbaner.",
+          "Modell" : "Mercurial Superfly VI Elite AG-Pro",
+          "Navn" : "Nike Mercurial Superfly",
+          "Pris" : "3199",
+          "bildeUrl" : "bilder/Nikehvit.png",
+          "bildeUrl2" : "https://thumblr.uniid.it/product/184708/89e15a32f21c.jpg"
+        },
+        "nike002" : {
+          "Farge1" : "Sort",
+          "Farge2" : "Gull",
+          "Info" : "Mercurial Superfly VI Elite AG-Pro er toppmodellen fra Nikes speedsilo Mercurial. Overdel i Nikes Flyknit 360-konstruksjon som gir en tett og fleksibel passform. AG-Pro-knotter for spill på nyere kunstgressbaner.",
+          "Modell" : "Mercurial Superfly VI Elite AG-Pro",
+          "Navn" : "Nike Mercurial Superfly",
+          "Pris" : 2700,
+          "bildeUrl" : "bilder/Superflysort.png",
+          "bildeUrl2" : "https://thumblr.uniid.it/product/181265/5e7628969d0b.jpg"
+        },
+        "nike003" : {
+          "Farge1" : "Sort",
+          "Farge2" : "Gul",
+          "Info" : "Phantom Vision Elite AG-Pro er toppmodellen fra Nikes Phantom-linje. Designet for ultimat komfort og kontroll. Innvendig Quadfit-overdel tilpasser seg fotens fasong og bidrar til støtte i alle retninger. AG-Pro-knotter for spill på kunstgressbaner.",
+          "Modell" : "Phantom Vison Elite AG-Pro",
+          "Navn" : "Nike Phantom",
+          "Pris" : 2100,
+          "bildeUrl" : "bilder/Phantomgull.png",
+          "bildeUrl2" : "https://thumblr.uniid.it/product/181382/f41ccb2d003c.jpg"
+        },
+        "nike004" : {
+          "Farge1" : "Blå",
+          "Farge2" : "Sort",
+          "Info" : "Tiempo Legend VII Elite FG er toppmodellen fra Nikes Tiempo-linje. Overdel i supermykt kenguruskinn som former seg perfekt etter foten din fra første stund. Flyknit-materiale rundt midtfoten og hælen bidrar til en mer dynamisk og fleksibel passform. FG-knotter for spill på naturgressbaner.",
+          "Modell" : "Nike Tiempo Legend VII Elite FG",
+          "Navn" : "Nike Tiempo",
+          "Pris" : 1950,
+          "bildeUrl" : "bilder/TiempoBla.png",
+          "bildeUrl2" : "https://thumblr.uniid.it/product/178027/e05634372624.jpg"
+        },
+        "nike005" : {
+          "Farge1" : "Gul",
+          "Farge2" : "Sort",
+          "Info" : "Tiempo Legend VII Elite FG er toppmodellen fra Nikes Tiempo-linje. Overdel i supermykt kenguruskinn som former seg perfekt etter foten din fra første stund. Flyknit-materiale rundt midtfoten og hælen bidrar til en mer dynamisk og fleksibel passform. FG-knotter for spill på naturgressbaner.",
+          "Modell" : "Nike Tiempo Legend VII Elite FG",
+          "Navn" : "Nike Tiempo",
+          "Pris" : 1800,
+          "bildeUrl" : "bilder/Tiempogul.png",
+          "bildeUrl2" : "https://thumblr.uniid.it/product/181339/6e94d6c04353.jpg"
+        },
+        "nike006" : {
+          "Farge1" : "Rød",
+          "Farge2" : "Sort",
+          "Info" : "Phantom Vision Elite AG-Pro er toppmodellen fra Nikes Phantom-linje. Designet for ultimat komfort og kontroll. Innvendig Quadfit-overdel tilpasser seg fotens fasong og bidrar til støtte i alle retninger. AG-Pro-knotter for spill på kunstgressbaner.",
+          "Modell" : "Phantom Vison Elite AG-Pro",
+          "Navn" : "Nike Phantom",
+          "Pris" : 2300,
+          "bildeUrl" : "bilder/Phantomrod.png",
+          "bildeUrl2" : "https://thumblr.uniid.it/product/181361/0e32292c2604.jpg"
+        },
+        "nike007" : {
+          "Farge1" : "Sort",
+          "Farge2" : "Sort",
+          "Info" : "Mercurial Vapor XII Elite SG-Pro er toppmodellen fra Nikes speedsilo Mercurial. Overdel i Nikes Flyknit 360-konstruksjon som gir en tett og fleksibel passform. SG-knotter for spill på våte og myke naturgressbaner.",
+          "Modell" : "Mercurial Vapor XII ELite AG-Pro",
+          "Navn" : "Nike Mercurial Vapor",
+          "Pris" : 2000,
+          "bildeUrl" : "bilder/Vapor2sort.png",
+          "bildeUrl2" : "https://www.torshovsport.no/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/n/i/nike_mercurial_vapor_xii_elite_fg_fotballsko_stealth_ops_pack_ah7380-001.jpg"
+        },
+        "nike008" : {
+          "Farge1" : "Hvit",
+          "Farge2" : "Sort",
+          "Info" : "Mercurial Vapor XII Elite AG-Pro er toppmodellen fra Nikes speedsilo Mercurial. Overdel i Nikes Flyknit 360-konstruksjon som gir en tett og fleksibel passform. SG-knotter for spill på våte og myke naturgressbaner.",
+          "Modell" : "Mercurial Vapor XII Elite AG-Pro",
+          "Navn" : "Nike Mercurial Vapor",
+          "Pris" : 2200,
+          "bildeUrl" : "bilder/Vaporsort.png",
+          "bildeUrl2" : "https://thumblr.uniid.it/product/181399/7307fc5d4965.jpg"
+        }
+      }
+    }
+  }
+}

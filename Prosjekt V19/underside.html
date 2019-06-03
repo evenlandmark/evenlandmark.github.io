@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="stilark.css">
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCQCtP52z01YTcGbh2Ia9H8mOU96cUwbkc",
+        authDomain: "sdfghjkl-12f92.firebaseapp.com",
+        databaseURL: "https://sdfghjkl-12f92.firebaseio.com",
+        projectId: "sdfghjkl-12f92",
+        storageBucket: "sdfghjkl-12f92.appspot.com",
+        messagingSenderId: "1091848498514"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+  </head>
+  <body>
+    <header>
+      <img src="bilder/Logo1.png" id="ApexLogo" alt="">
+
+      <ul>
+        <li> <a href="Index.html">Hjem</a> </li>
+        <li> <a href="Sko.html">Boot Room</a></li>
+        <li> <a href="Drakter.html">Drakter</a> </li>
+        <li> <a href="Baller.html">Baller</a> </li>
+      </ul>
+    </header>
+    <main>
+      <div id="secValgtVare">
+
+      </div>
+    </main>
+    <footer>
+      <div class="Kontaktinformasjon">
+        <div class="">
+          <i class="fas fa-shipping-fast" style="font-size:48px; margin-top:10px;"></i>
+          <h4>Rask Levering</h4>
+          <p>1-3 virkningsdager</p>
+        </div>
+
+        <div class="">
+          <i class="fa fa-credit-card" style="font-size:48px; margin-top:10px;"></i>
+          <h4>Sikker Betaling</h4>
+          <p>Kort eller Vipps</p>
+        </div>
+        <div class="">
+          <i class="fa fa-dropbox" class="fa fa-dropbox" style="font-size:48px; margin-top:10px;"></i>
+          <h4>Gratis Levering</h4>
+          <p>Gjelder kun bestillinger over 1400kr</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+
+    const main = document.querySelector("main"); // variabel som referer til mainelementet
+    const secValgtVare = document.querySelector("#secValgtVare"); // variabel som referer til mainelementet
+
+    // koden som henter key-verdien fra forrige side//
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var id = url.searchParams.get("id");
+    var parent = url.searchParams.get("parent");
+    var parentParent = url.searchParams.get("parentParent");
+
+    // referanser til databasen //
+    const db = firebase.database();
+    const valgtVare = db.ref("Varer/"+parentParent+"/"+ parent +"/" + id );
+    console.log("id: " + id );
+
+
+    valgtVare.on("value", visValgtVare);
+
+    function visValgtVare(snapshot){
+      let vare = snapshot.val();
+      let key = snapshot.key;
+
+      console.log(vare);
+
+
+
+      secValgtVare.innerHTML +=`
+      <section class="undersidefarge">
+
+      <article>
+      <img class="undersideBilde" src="${vare.bildeUrl2}">
+      </article>
+      <article class="">
+      <h1 id="overskrift">${vare.Modell}</h1>
+      <p> <b>Pris:</b>${vare.Pris}</p>
+      <p> <b>Farger:</b> ${vare.Farge1} og ${vare.Farge2}</p>
+      <p class="beskrivelseTekst"> ${vare.Info} </P>
+        <button type="button" class="handlekurvKnapp">Legg til i handlevogn</button>
+      </article>
+      </section>
+    `;
+    }
+    </script>
+
+
+
+
+  </body>
+</html>

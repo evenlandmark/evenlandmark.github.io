@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dyreklinikken</title>
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDP2zIR03R8kMPwtW0gwzX64gEnoUU2qoc",
+        authDomain: "prove-uke-9.firebaseapp.com",
+        databaseURL: "https://prove-uke-9.firebaseio.com",
+        projectId: "prove-uke-9",
+        storageBucket: "prove-uke-9.appspot.com",
+        messagingSenderId: "881725415918"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <!-- Lim inn kode fra firebase her -->
+    <style media="screen">
+      main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+        width: 90%;
+        margin: auto;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button onclick="alfabetiskKatt()">Oppgave 3a</button> <!-- Gjør ferdig koblingene for alle knappene -->
+        <button onclick="visAlder()">Oppgave 3b</button>
+        <button onclick="visBeige()">Oppgave 3c</button>
+        <button onclick="navnDyr()">Oppgave 3d</button>
+      </nav>
+    </header>
+    <main>
+
+    </main>
+
+    <script type="text/javascript">
+      //Referanser til HTML-elementer
+      const main = document.querySelector("main");
+      //Skriv referanser til database under her:
+      const db = firebase.database();
+      const hunder = db.ref("Dyr/Hunder");
+      const katter = db.ref("Dyr/Katter");
+      const Dyr = db.ref("Hunder/Katter");
+
+
+
+
+      // Javascript-funksjon for å generere HTML-kode for dyr
+      function genererHTML(snapshot){
+        let dyr = snapshot.val();
+        main.innerHTML +=`
+            <article class="Dyr">
+              <h1>${dyr.Navn}</h1>
+              <img src="${dyr.Bilde}" alt="">
+              <p>Farge: ${dyr.Farge1}, ${dyr.Type2}</p>
+              <p>Alder: ${dyr.Alder}</p>
+            </article> `;
+      }
+
+      // Funksjon som viser alle dyr
+      function visAlle(){
+        main.innerHTML = ""; // sletter innholdet i main.
+        hunder.on("child_added",genererHTML);
+        katter.on("child_added", genererHTML);
+
+      }
+
+      // Lag egne funksjoner som tilfredstiller spørringene 3A, 3B, 3C og 3D her:
+
+      visAlle(); // Funksjon som kjøres når siden lastes
+
+      function alfabetiskKatt(){
+        main.innerHTML = "";
+        katter.orderByChild("Navn").on("child_added", genererHTML);
+      }
+
+
+      // b) Oppgave
+      function visAlder(){
+        main.innerHTML = "";
+      hunder.orderByChild("Alder").startAt(9).endAt(11).on("child_added",genererHTML);
+
+      }
+      //oppgave C
+
+      function visBeige(){
+        main.innerHTML = "";
+        hunder.orderByChild("Farge1").equalTo("Beige").on("child_added", genererHTML);
+        hunder.orderByChild("Farge2").equalTo("Beige").on("child_added",genererHTML);
+        katter.orderByChild("Farge2").equalTo("Beige").on("child_added",genererHTML);
+        katter.orderByChild("Farge1").equalTo("Beige").on("child_added", genererHTML);
+
+
+
+
+      }
+
+      //OPPGAVE D
+      function navnDyr(){
+        main.innerHTML = "";
+        hunder.orderByChild("Navn").startAt("M").endAt("U").on("child_added", genererHTML);
+        katter.orderByChild("Navn").startAt("M").endAt("U").on("child_added",genererHTML);
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+  </body>
+</html>

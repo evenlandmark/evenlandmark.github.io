@@ -1,0 +1,16 @@
+{
+  "kontakter":{
+    "1":{
+    "firstName":"Even",
+    "lastName":"Jåvold Landmark",
+    "telephone":69696969
+  },
+  "2":{
+    "firstName":"Ola",
+    "lastName":"Nordmann",
+    "telephone":12345678
+
+  }
+  }
+
+}

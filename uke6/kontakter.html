@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBb-utHzv98l6Sxrw8H6dQYa4IwXm7_sgM",
+      authDomain: "uke-6-757a5.firebaseapp.com",
+      databaseURL: "https://uke-6-757a5.firebaseio.com",
+      projectId: "uke-6-757a5",
+      storageBucket: "uke-6-757a5.appspot.com",
+      messagingSenderId: "515051658189"
+    };
+    firebase.initializeApp(config);
+  </script>
+  </head>
+  <body>
+
+
+    <script type="text/javascript">
+      const db = firebase.database();
+      const bloggere = db.ref("bloggere");
+
+      //Pusher et objekt til databasen
+
+      bloggere.push({
+        "navn":"Sophie Elise",
+        "følgere":59000,
+        "alder":23
+      });
+
+      //Pusher to strings til databasen
+      bloggere.push("Pappahjerte");
+      bloggere.push("Annijor");
+
+      const billGates = bloggere.child("90440000");
+
+      billGates.set({
+        "navn":"Bill Gates",
+        "epost":"bill@microsoft.com"
+      });
+
+      const steveJobs = bloggere.child("90440000");
+      steveJobs.set({
+        "navn":"Steve Jobs",
+        "epost":"steve@apple.com"
+      });
+
+      //endre data
+      steveJobs.update({
+        "navn":"Jeff Bezos"
+      });
+
+      // bloggere.remove();
+
+    </script>
+  </body>
+</html>

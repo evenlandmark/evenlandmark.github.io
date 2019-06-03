@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCQCtP52z01YTcGbh2Ia9H8mOU96cUwbkc",
+        authDomain: "sdfghjkl-12f92.firebaseapp.com",
+        databaseURL: "https://sdfghjkl-12f92.firebaseio.com",
+        projectId: "sdfghjkl-12f92",
+        storageBucket: "sdfghjkl-12f92.appspot.com",
+        messagingSenderId: "1091848498514"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <link rel="stylesheet" href="stilark.css">
+  </head>
+  <body>
+    <header>
+      <img src="bilder/Logo1.png" id="ApexLogo" alt="">
+
+
+    <ul>
+      <li> <a href="Index.html">Hjem</a> </li>
+      <li> <a class="aktivSide"  href="Sko.html">Boot Room</a></li>
+      <li> <a href="Drakter.html">Drakter</a> </li>
+      <li> <a href="Baller.html">Baller</a> </li>
+    </ul>
+    <div class="KategoriHeader">
+      <div class="border">
+        <h1>Adidas Predator Fotballsko</h1>
+        <p>Her finner du vårt utvalg av fotballsko fra alle skolinjene til adidas. Vi kan tilby Predator, Nemeziz og X </p>
+      </div>
+    </div>
+  </header>
+
+
+    <nav class="knappeboks">
+      <button class="wtf" onclick="visSko()">ALLE</button>
+      <button class="wtf" onclick="visFargeBlå()">Blå</button>
+      <button class="wtf" onclick="visFargeSort()">Svart</button>
+      <button class="wtf" onclick="visFargeGul()">Gul</button>
+      <button class="wtf" onclick="visFargeRod()">Rød</button>
+      <button class="wtf" onclick="visPris()">Pris</button>
+    </nav>
+    <main class="skogrid">
+
+    </main>
+    <footer>
+      <div class="Kontaktinformasjon">
+        <div class="">
+          <i class="fas fa-shipping-fast" style="font-size:48px; margin-top:10px;"></i>
+          <h4>Rask Levering</h4>
+          <p>1-3 virkningsdager</p>
+        </div>
+
+        <div class="">
+          <i class="fa fa-credit-card" style="font-size:48px; margin-top:10px;"></i>
+          <h4>Sikker Betaling</h4>
+          <p>Kort eller Vipps</p>
+        </div>
+        <div class="">
+          <i class="fa fa-dropbox" class="fa fa-dropbox" style="font-size:48px; margin-top:10px;"></i>
+          <h4>Gratis Levering</h4>
+          <p>Gjelder kun bestillinger over 1400kr</p>
+        </div>
+
+      </div>
+    </footer>
+
+
+
+
+    <script>
+
+    const main = document.querySelector("main");
+    const db = firebase.database();
+    const fotballsko = db.ref("Varer/fotballsko/adidas");
+    const Varer = db.ref("Varer");
+
+    function visVare(snapshot){
+    let vare = snapshot.val();
+    let key = snapshot.key;
+    let parent = snapshot.ref.parent.key;
+    let parentParent = snapshot.ref.parent.parent.key;
+    let ref = parent + "/" + key;
+    console.log(snapshot.val())
+      main.innerHTML += `
+
+      <a href="underside.html?id=${key}&parent=${parent}&parentParent=${parentParent}">
+        <article>
+          <img src="${vare.bildeUrl}">
+          <h1>${vare.Modell}</h1>
+          <p>Pris: ${vare.Pris}</p>
+        </article>
+        </a>
+
+      `;
+    }
+
+
+    function visSko(){
+      main.innerHTML=``
+      fotballsko.on("child_added",visVare);
+    }
+    function visPris(){
+      main.innerHTML = ``
+      fotballsko.orderByChild("Pris").on("child_added",visVare);
+
+    }
+    function visFargeBlå(){
+      main.innerHTML = ``
+      fotballsko.orderByChild("Farge1").equalTo("Blå").on("child_added", visVare);
+      fotballsko.orderByChild("Farge2").equalTo("Blå").on("child_added", visVare);
+    }
+
+    function visFargeSort(){
+      main.innerHTML = ``
+      fotballsko.orderByChild("Farge1").equalTo("Sort").on("child_added", visVare);
+      fotballsko.orderByChild("Farge2").equalTo("Sort").on("child_added", visVare);
+    }
+
+    function visFargeGul(){
+      main.innerHTML =``
+      fotballsko.orderByChild("Farge1").equalTo("Gul").on("child_added",visVare);
+      fotballsko.orderByChild("Farge2").equalTo("Gul").on("child_added",visVare);
+
+          }
+
+    function visFargeRod(){
+      main.innerHTML =``
+      fotballsko.orderByChild("Farge1").equalTo("Rød").on("child_added",visVare);
+      fotballsko.orderByChild("Farge2").equalTo("Rød").on("child_added",visVare);
+
+        }
+
+
+
+    visSko(); // Kjører når siden lastes
+
+
+
+  </script>
+
+  </body>
+</html>
